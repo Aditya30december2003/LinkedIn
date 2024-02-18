@@ -47,8 +47,8 @@ const login = (props) => {
             </ul>
 
             <div className='flex items-center gap-2 md:gap-5 mr-2 md:mr-10'>
-                <Link to='/LinkedIn/signup' className='text-[0.9rem] md:text-[1rem] text-black px-6 py-3 rounded-[2rem] hover:bg-black/10'>Join now </Link>
-                <Link to='/LinkedIn/signin' className='text-blue-700 text-[1rem] border-2 px-6 py-3 rounded-[2rem] font-bold border-blue-700 hover:bg-blue-300/20'>Sign in</Link>
+                <Link to='/signup' className='text-[0.9rem] md:text-[1rem] text-black px-6 py-3 rounded-[2rem] hover:bg-black/10'>Join now </Link>
+                <Link to='/signin' className='text-blue-700 text-[1rem] border-2 px-6 py-3 rounded-[2rem] font-bold border-blue-700 hover:bg-blue-300/20'>Sign in</Link>
             </div>
             </div>
 
