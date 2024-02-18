@@ -29,7 +29,7 @@ const Header = () => {
     const handleLogout =async()=>{
         try{
          await account.deleteSession("current")
-         navigate("/LinkedIn")
+         navigate("/")
         }
         catch(error){
          console.log(error)
