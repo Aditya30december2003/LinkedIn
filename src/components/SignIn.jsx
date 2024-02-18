@@ -63,7 +63,7 @@ const SignIn = () => {
         </div>
       </div>
       <div className='text-center mt-8'>
-          <p>New to Linkedin? <Link to ='/LinkedIn/signup' className='mt-2  cursor-pointer text-blue-500 w-[38%] p-2 rounded-[2rem]   font-bold hover:underline hover:bg-blue-300/80'>Join Now</Link></p>
+          <p>New to Linkedin? <Link to ='/signup' className='mt-2  cursor-pointer text-blue-500 w-[38%] p-2 rounded-[2rem]   font-bold hover:underline hover:bg-blue-300/80'>Join Now</Link></p>
       </div>
     </div>
   )
