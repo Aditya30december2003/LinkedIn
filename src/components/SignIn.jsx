@@ -15,7 +15,7 @@ const SignIn = () => {
 
     try{
       await account.createEmailSession(user.email , user.password)
-      navigate('/LinkedIn/home')
+      navigate('/home')
     }
     catch(error){
       console.log(error)
