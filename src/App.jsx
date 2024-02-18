@@ -12,10 +12,10 @@ function App() {
   return (
     <>
     <Routes>
-      <Route path='/LinkedIn' element={<Login />} />
-      <Route path='/LinkedIn/home' element={<Home />} />
-      <Route path='/LinkedIn/signin' element={<SignIn />} />
-      <Route path='/LinkedIn/signup' element={<SignUp />} />
+      <Route path='/' element={<Login />} />
+      <Route path='/home' element={<Home />} />
+      <Route path='/signin' element={<SignIn />} />
+      <Route path='/signup' element={<SignUp />} />
     </Routes>  
     </>
   )
