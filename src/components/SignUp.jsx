@@ -12,25 +12,26 @@ const SignUp = () => {
     password:"",
   })
 
-  const signupUser = async(e) => {
+const signupUser = async(e) => {
     e.preventDefault()
-    const promise = account.create(
-      uuidv4(),
-      user.email,
-      user.password,
-      user.name,
-    )
-  
-    promise.then(
-      function(response){
-        console.log(response)
-        navigate("/home")
-      },
-      function(error){
-        console.log(error)
-      }
-    )
-} 
+    try {
+      // Create user
+      const response = await account.create(
+        uuidv4(),
+        user.email,
+        user.password,
+        user.name
+      );
+
+      // Log in user to create a session
+      await account.createEmailSession(user.email, user.password);
+
+      console.log(response);
+      navigate('/home');
+    } catch (error) {
+      console.log(error);
+    }
+}; 
 
 
   return (
